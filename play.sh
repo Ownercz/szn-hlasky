@@ -5,6 +5,6 @@ ls $(ls *.mp3 | cut -f1 -d _ | uniq | sed -n "$(echo $(( $RANDOM % $(ls *.mp3 | 
   # Something involving $file, or you can leave
   # off the while to just get the filenames
   echo $file
-#  cvlc -q --play-and-exit other/gongsluz.wav $file
+  cvlc -q --play-and-exit other/gongsluz.wav $file
   break
 done
