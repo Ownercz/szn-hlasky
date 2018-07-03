@@ -10,6 +10,7 @@ declare -A guys=(
 ["172.24.1.107"]="vidlak"
 ["10.48.0.55"]="martin"
 ["10.0.132.25"]="tomik"
+["10.0.132.10"]="pacicka"
 )
 if [[ ${guys[$SOCAT_PEERADDR]} ]]; then
   cvlc -q --play-and-exit ./other/${guys[$SOCAT_PEERADDR]}.mp3
